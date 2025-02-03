@@ -1,0 +1,14 @@
+{
+    "name": "My Home Assistant Add-ons",
+    "url": "https://github.com/cstarlea/hummingbot.git",
+    "maintainer": "Your Name",
+    "addons": [
+      {
+        "name": "Hummingbot",
+        "slug": "hummingbot",
+        "description": "Runs Hummingbot with Dashboard, API, and Quants Lab",
+        "version": "1.0.0"
+      }
+    ]
+  }
+  

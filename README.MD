@@ -1,0 +1,1 @@
+Trying to install Hummingbot as an Add-On 
