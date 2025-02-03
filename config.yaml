@@ -1,0 +1,29 @@
+name: "Hummingbot"
+version: "1.0.0"
+slug: "hummingbot"
+description: "A Home Assistant add-on for running Hummingbot with Dashboard, Back-End API, and Quants Lab."
+url: "https://hummingbot.org"
+startup: "services"
+boot: "auto"
+init: false
+panel_icon: "mdi:robot"
+arch:
+  - amd64
+  - armv7
+  - aarch64
+options:
+  ui_mode: "dashboard" # This flag will trigger full UI mode.
+  strategy: "pure_market_making"
+  exchange: "binance"
+  trading_pair: "BTC-USDT"
+schema:
+  ui_mode: "str"
+  strategy: "str"
+  exchange: "str"
+  trading_pair: "str"
+ports:
+  15888/tcp: 15888 # Adjust this port if needed.
+map:
+  - config:rw
+  - ssl
+image: "ghcr.io/hummingbot/hummingbot:latest"
